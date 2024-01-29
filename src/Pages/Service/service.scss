@@ -1,0 +1,37 @@
+@import '../../Components//Utils//colors.scss';
+@import '../../Components//Utils//heading.scss';
+
+
+.service{
+
+    margin-top: 50px;
+    .service-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+
+    }
+    
+    .service-header{
+        @include heading;
+    }
+    .service-card{
+        height: 300px;
+        width: 350px;
+        background-color: $card-color;
+        color: $font-color;
+        .card{
+            display: flex;
+            flex-direction: column;
+            padding: 10px
+        }
+        .service-h3{
+            color: #FEC544;
+        }
+        img{
+            height: 80px;
+            width: 80px;
+        }
+    }
+}

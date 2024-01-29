@@ -1,0 +1,32 @@
+@import '../../Components/Utils/colors.scss';
+
+
+#scrollTop{
+    
+    position: fixed;
+    top: 650px;
+    right: 0;
+    height: 30px;
+    width: 30px;
+    border: 1px solid $btn-color;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: .5s all;
+    outline: none;
+    z-index: 99;
+    img{
+        height: 30px;
+        width: 30px;
+    }
+}
+#scrollTop:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 5px $btn-color;
+}
+
+@media only screen and (max-width: 600px) {
+    #scrollTop {
+        top: 750px;
+    }
+  }

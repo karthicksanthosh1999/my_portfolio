@@ -1,0 +1,68 @@
+@import '../../Components//Utils//colors.scss';
+@import '../../Components//Utils//heading.scss';
+
+
+.skils{
+    margin: 30px 10px 0px 10px;
+
+    .skils-heading{
+        @include heading
+    }
+    .skils-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 0px 50px 0px 50px;
+        gap: 50px;
+        width: auto;
+
+        .skils-div1{
+            width: 40%;
+            h2{
+                font-size: 30px;
+                color: $font-color;
+            }
+            p{
+                color: $subfont-color;
+            }
+        }  
+        .skils-div2{
+                width: 50%;
+            .bar-name{
+                display: flex;
+                justify-content: space-between;
+                h3{
+                    color: $font-color;
+                }
+                p{
+                    color: $btn-color;
+                }
+            }
+            .bar-container{
+                height: 5px;
+                width: 100%;
+                background-color: gray;
+                .skils-bar{
+                    height: 5px;
+                    background-color: $btn-color;
+                }
+            }
+        } 
+    }
+}
+
+@media only screen and (max-width  : 600px){
+    
+
+    .skils .skils-container{
+        margin: 0px 10px 0px 10px;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+.skils .skils-container .skils-div1, .skils .skils-container .skils-div2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}

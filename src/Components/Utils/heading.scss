@@ -1,0 +1,12 @@
+@import './colors.scss';
+
+@mixin heading{
+        color: $btn-color;
+        font-size: 35px;
+        text-align: center;
+        font-weight: bold;
+        // background-image: linear-gradient(120deg, #e65c00,#F9D423 100%);
+        // background-repeat: no-repeat;
+        // background-size: auto 0.1em;
+        // background-position: 50% 50%;
+}

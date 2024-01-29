@@ -1,0 +1,137 @@
+@import '../../Components//Utils//colors.scss';
+@import '../../Components//Utils//heading.scss';
+
+.contact{
+    margin: 30px 10px 0px 30px;
+}
+
+.contact-header{
+    @include heading
+}
+.form-header{
+    color: $font-color;
+    font-size: 30px;
+}
+
+.contact-first{
+
+    width: 50%;
+
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 25px;
+        
+        button{
+            height: 45px;
+            width: 180px;
+            border-radius: 10px;
+            background-color: $btn-color;
+            transition: .5s all;
+        }
+        button:hover{
+            cursor: pointer;
+            box-shadow: 0px 0px 5px 5px $btn-color;
+            
+        }
+    
+        input[type=text], textarea{
+            // width: 100%;
+            padding: 12px;
+            background-color: $card-color;
+            color: $subfont-color;
+            transition: .4s all;
+            border-radius: 8px;
+            // resize: vertical;
+            border: 1px solid $font-color;
+        }
+        textarea{
+            height: 150px;
+        }
+        input[type=text]:focus {
+            border: 1px solid $btn-color;
+        }
+        textarea:focus{
+            border: 1px solid $btn-color;
+        }
+    }
+}
+
+
+
+.address-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 20px;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-second{
+        width: auto;
+    .contact-subtitle{
+        color: $subfont-color;
+        font-size: 15px;
+    }
+    .icon-container{
+        display: flex;
+        flex-direction: column;
+        img{
+            height: 25px;
+            width: 25px;
+            border: 2px solid $subfont-color;
+            padding: 10px;
+            border-radius: 50%;
+            transition: .5s all;
+        }
+        img:hover{
+            border: 2px solid $btn-color;
+            background-color: $bg-color;
+            cursor: pointer;
+            box-shadow: 0px 0px 5px 5px $btn-color;
+        }
+    }
+        .icons{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+            div{
+                display: block;
+                h4{
+                    color: $font-color;
+                }
+                p{
+                    color: $subfont-color;
+                }
+            }
+        }
+    .social-container{
+        display: flex;
+        .sosical-icon-container{
+            display: flex;
+            justify-content: flex-start;
+            gap: 30px;
+        }
+    }
+    .social-txt{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media only screen and (max-width  : 600px){
+    .contact-first{
+        width: 100%;
+    } 
+    .skils-div1, .skils-div2{
+        width: 100%;
+    }
+}

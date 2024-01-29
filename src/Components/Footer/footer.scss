@@ -1,0 +1,17 @@
+@import '../../Components//Utils//colors.scss';
+@import '../../Components//Utils//heading.scss';
+
+.footer{
+    margin-top: 20px;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $card-color;
+
+    p{
+        color: $subfont-color;
+        
+    }
+}

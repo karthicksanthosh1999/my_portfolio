@@ -1,0 +1,11 @@
+@import './Components/Utils/colors.scss';
+
+body{
+    background-color: $bg-color;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
